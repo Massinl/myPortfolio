@@ -1,6 +1,6 @@
 /* src/styles/global.css */
 
-/* Reset some default browser styles */
+/* Reset default browser styles */
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +10,8 @@
 /* Body */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #111;
-  color: #eaeaea;
+  background: linear-gradient(135deg, #ffe5d9 0%, #ffd6b8 100%);
+  color: #3b2e2e; /* dark brown for text */
 }
 
 /* Links */
@@ -21,35 +21,38 @@ a {
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.85;
   transition: 0.3s;
 }
 
 /* Buttons */
 .button {
   padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .button-blue {
-  background-color: #2563eb;
+  background-color: #ff8c42; /* warm bright orange */
   color: white;
 }
 
 .button-blue:hover {
-  background-color: #3b82f6;
+  background-color: #ffa65c;
+  transform: translateY(-2px);
 }
 
 .button-green {
-  background-color: #16a34a;
+  background-color: #ffb07c; /* soft peach */
   color: white;
 }
 
 .button-green:hover {
-  background-color: #22c55e;
+  background-color: #ffc69a;
+  transform: translateY(-2px);
 }
 
 /* Headings */
@@ -57,11 +60,13 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #d97706; /* darker warm orange */
 }
 
 p {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
+  color: #5c3a21; /* medium brown for readability */
 }
 
 /* Home page container */
@@ -80,5 +85,18 @@ p {
   margin-top: 3rem;
   display: flex;
   gap: 2rem;
-  color: #ccc;
+  color: #7f5f4f; /* warm medium brown */
+  font-weight: 500;
 }
+
+.skills span {
+  transition: all 0.3s ease;
+}
+
+.skills span:hover {
+  color: #d97706; /* highlight warm orange */
+  cursor: default;
+  transform: scale(1.1);
+}
+
+
