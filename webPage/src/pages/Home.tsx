@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
-import profilePic from '../assets/profile.jpg'; // Make sure your image is here
+import profilePic from '../assets/profile.jpg'; // Make sure your image is in src/assets/
 
 export default function Home() {
   useEffect(() => {
-    const elements = document.querySelectorAll('.skills-section, .project-card');
+    const elements = document.querySelectorAll('.section-card, .project-card');
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
@@ -23,10 +23,11 @@ export default function Home() {
     <div className="home-container">
 
       {/* === Hero Section === */}
-      <section className="hero">
+      <section className="hero section-card">
         <img src={profilePic} alt="Cristian Massini" className="hero-image" />
         <div className="hero-text">
-          <h1>Hi, I'm Cristian Massini Pérez 👋</h1>
+          <h1>Hello world!
+             I'm Cristian Massini Pérez 👋</h1>
           <p>
             4th-year <strong>Software Engineering student</strong> & <strong>Web Developer</strong> from Puerto Rico.
             I turn ideas into smooth, functional web apps, focusing on clean code and engaging user experiences.
@@ -42,17 +43,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* === About Me Section === */}
-      <section className="skills-section">
+      {/* === What I Do Section === */}
+      <section className="section-card">
         <h2>What I Do</h2>
         <p>
           I build <strong>responsive web apps</strong>, manage <strong>databases</strong>, and develop <strong>full-stack systems</strong>.
-          My work comes mainly from personal and university projects. I’m curious, collaborative, and love building tools that help people.
+          My experience comes from personal and university projects. I’m curious, collaborative, and love building tools that help people.
         </p>
       </section>
 
-      {/* === Skills Cards Section === */}
-      <section className="skills-section cards-section">
+      {/* === Skills Section === */}
+      <section className="section-card">
         <h2>Technical Skills</h2>
         <div className="skills-cards">
           <div className="skill-card">
@@ -70,8 +71,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* === Projects Cards Section === */}
-      <section className="skills-section projects-section">
+      {/* === Projects Section === */}
+      <section className="section-card">
         <h2>Highlighted Projects</h2>
         <div className="projects-preview">
           <div className="project-card">
