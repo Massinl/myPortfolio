@@ -26,8 +26,8 @@ export default function Home() {
       <section className="hero section-card">
         <img src={profilePic} alt="Cristian Massini" className="hero-image" />
         <div className="hero-text">
-          <h1>Hello world!
-             I'm Cristian Massini Pérez 👋</h1>
+            <h1>Hello world!</h1>
+            <h1>I'm Cristian Massini Pérez 👋</h1>
           <p>
             4th-year <strong>Software Engineering student</strong> & <strong>Web Developer</strong> from Puerto Rico.
             I turn ideas into smooth, functional web apps, focusing on clean code and engaging user experiences.
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <div className="skill-card">
             <h3>Languages & Tools</h3>
-            <p>Python, Java, C++, Git</p>
+            <p>Python, Java, C++, Git, Github</p>
           </div>
         </div>
       </section>
