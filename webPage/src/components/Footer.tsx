@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Footer() {
-  return <footer>© 2025 Cristian J Massini</footer>;
+  return <footer>© Copyright 2025. Made by Cristian J Massini</footer>;
 }
