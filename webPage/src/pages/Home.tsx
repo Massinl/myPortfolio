@@ -92,9 +92,11 @@ export default function Home() {
             <p>React & Supabase platform connecting students for projects and study groups.</p>
           </div>
         </div>
+        <div className="last">
         <Link to="/projects" className="button button-orange">
           See All Projects →
         </Link>
+        </div>
       </section>
 
     </div>
