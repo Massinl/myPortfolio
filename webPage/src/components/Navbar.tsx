@@ -14,7 +14,7 @@ export default function Navbar() {
             Home
         </Link>
         <Link to="/About" className={location.pathname === "/About" ? "active" : ""}>
-            About
+            About me
         </Link>
         <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""}>
             Projects

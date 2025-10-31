@@ -1,24 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/home.css';
 
 export default function About() {
-  useEffect(() => {
-    const elements = document.querySelectorAll('.about-section, .about-card');
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    elements.forEach(el => observer.observe(el));
-    return () => elements.forEach(el => observer.unobserve(el));
-  }, []);
-
   return (
-    <div className="about-container">
+    <div className="home-container">
 
       {/* === Hero / Intro === */}
       <section className="hero">
@@ -30,8 +15,8 @@ export default function About() {
       </section>
 
       {/* === Personal Info Cards === */}
-      <section className="about-section">
-        <div className="about-card">
+      <section className="about-section no-animation">
+        <div className="section-card">
           <h2>Hobbies & Gaming 🎮</h2>
           <p>
             Competitive PS5 gamer (PSN: <strong>vLmNukes</strong>), especially NBA 2K.  
@@ -39,7 +24,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="about-card">
+        <div className="section-card">
           <h2>Food & Fun 🍴</h2>
           <p>
             I love exploring new foods and cuisines.  
@@ -47,7 +32,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="about-card">
+        <div className="section-card">
           <h2>Tech & Learning 💻</h2>
           <p>
             Passionate about web development, programming, and new tech.  
@@ -55,7 +40,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="about-card">
+        <div className="section-card">
           <h2>My Approach 🚀</h2>
           <p>
             I tackle challenges with curiosity, persistence, and creativity.  

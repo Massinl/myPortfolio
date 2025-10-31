@@ -257,6 +257,14 @@ p {
   padding: 5rem 2rem;
 }
 
+/* Disable animation for About page */
+.about-section.no-animation .section-card {
+  opacity: 1 ;
+  transform: none ;
+  transition: none ;
+}
+
+
 /* === Responsive === */
 @media (max-width: 768px) {
   h1 { font-size: 2.5rem; }

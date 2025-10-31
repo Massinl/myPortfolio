@@ -27,7 +27,7 @@ export default function Home() {
         <img src={profilePic} alt="Cristian Massini" className="hero-image" />
         <div className="hero-text">
             <h1>Hello world!</h1>
-            <h1>I'm Cristian Massini Pérez 👋</h1>
+            <h1>I'm Cristian Massini👋</h1>
           <p>
             4th-year <strong>Software Engineering student</strong> & <strong>Web Developer</strong> from Puerto Rico.
             I turn ideas into smooth, functional web apps, focusing on clean code and engaging user experiences.
@@ -39,7 +39,11 @@ export default function Home() {
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="button button-green">
               Download Resume
             </a>
+            <Link to="/about" className="button button-blue">
+                Want to know me outside coding?
+            </Link>
           </div>
+
         </div>
       </section>
 
