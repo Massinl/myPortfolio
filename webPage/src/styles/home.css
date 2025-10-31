@@ -37,25 +37,17 @@ a:hover {
   border: none;
 }
 
-.button-blue {
+.button-orange {
   background-color: #ff8c42;
   color: white;
 }
 
-.button-blue:hover {
+.button-orange:hover {
   background-color: #ffa65c;
+  color:rgb(0, 0, 0);
   transform: translateY(-2px);
 }
 
-.button-green {
-  background-color: #ffb07c;
-  color: white;
-}
-
-.button-green:hover {
-  background-color: #ffc69a;
-  transform: translateY(-2px);
-}
 
 /* === Headings with subtle texture === */
 h1, h2 {
@@ -263,6 +255,14 @@ p {
   transform: none ;
   transition: none ;
 }
+.about-hero .hero {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  color: #3b2e2e;
+}
+
+
+
 
 
 /* === Responsive === */

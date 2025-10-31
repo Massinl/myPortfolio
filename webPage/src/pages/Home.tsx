@@ -33,13 +33,13 @@ export default function Home() {
             I turn ideas into smooth, functional web apps, focusing on clean code and engaging user experiences.
           </p>
           <div className="hero-buttons">
-            <Link to="/projects" className="button button-blue">
+            <Link to="/projects" className="button button-orange">
               View My Projects
             </Link>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="button button-green">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="button button-orange">
               Download Resume
             </a>
-            <Link to="/about" className="button button-blue">
+            <Link to="/About" className="button button-orange">
                 Want to know me outside coding?
             </Link>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
             <p>React & Supabase platform connecting students for projects and study groups.</p>
           </div>
         </div>
-        <Link to="/projects" className="button button-blue">
+        <Link to="/projects" className="button button-orange">
           See All Projects →
         </Link>
       </section>

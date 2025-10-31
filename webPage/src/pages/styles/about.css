@@ -1,0 +1,93 @@
+/* === Animated Gradient Background === */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.home-container {
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(-45deg, #ff7eb9, #ffb347, #8aefff, #ff7eb9);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+/* === Section Cards === */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+.section-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+h2 {
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* === Hexagon Skill Graph === */
+.hexagon-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.hex-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.hex-row.offset {
+  margin-left: 3rem;
+}
+
+.hex {
+  width: 120px;
+  height: 69px;
+  background: rgba(255,255,255,0.15);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hex:hover {
+  transform: scale(1.1);
+  background: rgba(255,255,255,0.3);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .hex-row.offset { margin-left: 0; flex-direction: column; }
+  .hex { width: 100px; height: 60px; }
+}
