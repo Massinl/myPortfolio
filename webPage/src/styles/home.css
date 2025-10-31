@@ -233,11 +233,6 @@ p {
 }
 
 /* === Section Backgrounds === */
-.about-container {
-  background: linear-gradient(135deg, #ffe5d9 0%, #ffd6b8 100%);
-  padding: 5rem 2rem;
-  min-height: 100vh;
-}
 
 .skills-container {
   background: linear-gradient(135deg, #fff0e6 0%, #ffe0cc 100%);
@@ -249,17 +244,6 @@ p {
   padding: 5rem 2rem;
 }
 
-/* Disable animation for About page */
-.about-section.no-animation .section-card {
-  opacity: 1 ;
-  transform: none ;
-  transition: none ;
-}
-.about-hero .hero {
-  padding-bottom: 2rem;
-  padding-top: 3rem;
-  color: #3b2e2e;
-}
 
 
 
