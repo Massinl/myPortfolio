@@ -6,6 +6,7 @@
 .about-container {
   background: linear-gradient(135deg, #ffe5d9 0%, #ffd6b8 100%);
   padding: 2rem 1.5rem;
+  padding-top: .5rem;
   min-height: 100vh;
 }
 .about-section {
