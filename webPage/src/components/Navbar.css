@@ -2,7 +2,7 @@
 .navbar {
   width: 100vw;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
@@ -80,24 +80,27 @@
 /* Animate hamburger when open */
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
+  width: 30px;
 }
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+  width: 30px;
+
 }
 
 /* === Desktop focus (Web only) === */
 @media (min-width: 1024px) {
   .navbar {
-    justify-content: center;
+    justify-content:left;
     gap: 8rem;
   }
 }
 
 /* === Medium screens === */
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .navbar {
     flex-direction: column;
     gap: 0.5rem;
@@ -112,11 +115,34 @@
 }
 
 /* === Small screens / phones === */
-@media (max-width: 480px) {
-  .hamburger {
-    display: flex;
+/* === Small screens / phones === */
+@media (max-width: 424px) {
+  .navbar {
+    flex-direction: row;          /* keep items in a row */
+    justify-content: flex-start;  /* hamburger top-left */
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    gap: 1rem;
   }
 
+  /* Hamburger always visible */
+  .hamburger {
+    display: flex;
+    order: 0; /* first item in the row */
+    width: 35px;
+    cursor: pointer;
+  }
+
+  /* Logo/text moves to center */
+  .navbar-logo {
+    flex: 1;                   /* take remaining space */
+    text-align: center;
+    order: 1;                   /* after hamburger */
+    margin: 0;
+  }
+
+  /* Links dropdown */
   .navbar-links {
     position: absolute;
     top: 60px;
@@ -138,3 +164,4 @@
     transform: translateY(0);
   }
 }
+
