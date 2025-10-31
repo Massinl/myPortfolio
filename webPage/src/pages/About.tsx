@@ -13,11 +13,11 @@ const barsData = [
 
 const About: FC = () => {
   return (
-    <div className="home-container">
+    <div className="about-container">
       <section className="about-section">
 
         {/* Card 1: About Me */}
-        <div className="section-card wide-card">
+        <div className="about-section-card wide-card">
           <h2><FaUser /> About Me</h2>
           <p>
             I’m from Jayuya, Puerto Rico, and currently studying <strong>Software Engineering</strong> at UPRM.
@@ -25,7 +25,7 @@ const About: FC = () => {
           </p>
         </div>
         {/* Card 5: Tech & Learning */}
-        <div className="section-card">
+        <div className="about-section-card">
           <h2><FaLaptopCode /> Tech & Learning</h2>
           <p>
             Passionate about web development, programming, and new tech.  
@@ -34,7 +34,7 @@ const About: FC = () => {
         </div>
 
         {/* Card 3: Hobbies */}
-        <div className="section-card">
+        <div className="about-section-card">
           <h2><FaGamepad /> Hobbies</h2>
           <p>
             When I’m not working or coding, you’ll find me on the gym or most likely on my PS5, diving into competitive gaming. 
@@ -44,7 +44,7 @@ const About: FC = () => {
         </div>
 
         {/* Card 4: Food & Fun */}
-        <div className="section-card">
+        <div className="about-section-card">
           <h2><FaUtensils /> Food & Fun</h2>
           <p>
             I love exploring almost all types of food—Asian, Korean, Criollo, and more. I also enjoy experimenting in the kitchen, though mofongo is still tricky to master!
@@ -55,7 +55,7 @@ const About: FC = () => {
 
 
         {/* Card 6: My Approach */}
-        <div className="section-card">
+        <div className="about-section-card">
           <h2><FaRocket /> My Approach</h2>
           <p>
             I tackle challenges with curiosity, persistence, and creativity.  
@@ -64,7 +64,7 @@ const About: FC = () => {
         </div>
 
         {/* Card 2: Archetype Breakdown */}
-        <div className="section-card wide-card">
+        <div className="about-section-card wide-card">
           <h2>Archetype Breakdown 🧠</h2>
           <div className="vertical-bar-chart-container" style={{ '--chart-height': '300px' } as React.CSSProperties}>
             {barsData.map((bar) => (
